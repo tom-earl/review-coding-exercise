@@ -1,0 +1,33 @@
+//Includes the input-output stream library.
+#include <iostream>
+
+// Specifies that elements from the standard namespace are used.
+using namespace std;
+
+//Defines the main function.
+int main() {
+	
+//Declares three variables of type double	
+double totalBillAmount, serviceCharge, totalAmountToPay;
+
+//Outputs a prompt to enter the total bill amount.
+cout << "Enter or Type the total bill Amount: ";
+
+//Takes user input for the total bill amount.
+cin >> totalBillAmount;
+
+// Calculates the service charge (15% of the total bill amount).
+serviceCharge = 0.15 * totalBillAmount;
+
+// Calculates the total amount to pay (bill amount plus service charge).
+totalAmountToPay = totalBillAmount + serviceCharge;
+
+//Outputs the service charge amount.
+cout<< "Service Charge Amount:" << serviceCharge << endl;
+
+// Outputs the total amount to pay.
+cout<< "Total Amount to Pay:" << totalAmountToPay << endl;
+
+// Indicates successful execution and termination of the program.
+return 0;
+}
