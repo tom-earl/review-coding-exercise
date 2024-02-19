@@ -1,0 +1,64 @@
+// input stream library for user interaction
+
+#include<iostream>
+
+//include the content of iostream file
+
+ using namespace std;
+ 
+ //execution of the program begins
+ int main(){
+ 	
+ 	//varibales for bill calcularion
+ 	float billAmount,discountRate,serviceCharge,totalAmount,discountAmount;
+ 	int age;
+ 	
+ 	//prompt the user to enter age
+ 	cout<<"Enter your age:";
+ 	
+ 	// output message asking for users age
+ 	cin>>age;
+ 	
+ 	// enter total bill amount
+ 	cout<< "Enter yhe total bill amount $";
+ 	//output for asking bill amount
+ 	cin>> billAmount;
+ 	
+ 	// calculate the servcie charge
+ 	serviceCharge=billAmount * 0.15;
+ 	
+ 	//customer is either below 10 or 65 and abve ,the get a 30% discount
+ if  ( age>=10&& age<=17){
+ 
+	 
+ 	 discountRate=0.15;
+ 
+ // otherwise discount is apllied
+} else if (age>=65) {
+	discountRate=0.30;
+}
+ discountRate =0.0;
+	//calculate the discount Rate and the total amount
+	discountAmount=discountRate*billAmount;
+ totalAmount=billAmount+serviceCharge-discountAmount;
+ 
+         //display discount
+        cout<<" No Discount:"<< discountRate<< endl;
+        
+	//display the service charge
+	cout<<"Service Charge:$"<<serviceCharge << endl;
+	
+	//display the final amount
+		cout<<"Final amount to be paid: $ "<<totalAmount<<endl;
+			
+			return 0;
+	}
+	
+
+
+ 	
+ 	
+ 	
+ 	
+ 	
+ 
